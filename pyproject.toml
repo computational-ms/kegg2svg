@@ -2,11 +2,12 @@
 black = { version = "^18.3-alpha.0", python = "^3.7" }
 
 [build-system]
-requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.0"]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
 write_to = "kegg2svg/version.txt"
+version_scheme = "no-guess-dev"
 
 [tool.black]
 line-length = 88
