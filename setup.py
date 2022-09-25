@@ -1,5 +1,4 @@
 import setuptools
-from loguru import logger
 
 
 def branch_dependent_version():
