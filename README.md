@@ -32,3 +32,11 @@ Then you can convert the html to svg using:
 `
 kegg2svg map01100.html map01100.svg
 `
+
+### Adding quant data
+
+`
+kegg2svg map01100.html map01100.svg -q example_data/metabolite_quants_example.csv
+`
+
+Please refer to the example_data files for the format. Only _ID_ and _value_ columns are required. Scaling of reaction paths is not implemented yet.
