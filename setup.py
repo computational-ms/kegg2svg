@@ -8,17 +8,17 @@ def branch_dependent_version():
         return ""
 
     def version_scheme(version):
-        if version.branch in ["main", "master"]:
-            _v = str(version.tag)
-        else:
+        if version.branch not in ["main", "master"]:
             _v = setuptools_scm.get_version(local_scheme=void)
+        else:
+            _v = str(version.tag)
         return _v
 
     def local_scheme(version):
-        if version.branch in ["main", "master"]:
-            _v = ""
-        else:
+        if version.branch not in ["main", "master"]:
             _v = setuptools_scm.get_version(version_scheme=void)
+        else:
+            _v = ""
         return _v
 
     scm_version = {
