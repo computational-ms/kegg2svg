@@ -22,7 +22,7 @@ python setup.py .
 You will need the html from KEGG. You can get it e.g. via
 
 `
-curl -O "https://www.genome.jp/pathway/map01100" map01100.html
+curl "https://www.genome.jp/pathway/map01100" -o map01100.html
 `
 
 *NOTE* You MUST make sure to comply with the conditions of using KEGG http://www.kegg.jp/kegg/legal.html
