@@ -1,0 +1,16 @@
+ID,value,name
+R00299,2,ATP:D-glucose 6-phosphotransferase; ATP + D-Glucose <=> ADP + D-Glucose 6-phosphate
+R01324,3,citrate hydroxymutase; Citrate <=> Isocitrate
+R01825,4,D-erythrose 4-phosphate:NAD+ oxidoreductase; D-Erythrose 4-phosphate + NAD+ + H2O <=> 4-Phospho-D-erythronate + NADH + H+
+R01528,5,6-phospho-D-gluconate:NADP+ 2-oxidoreductase (decarboxylating); 6-Phospho-D-gluconate + NADP+ <=> D-Ribulose 5-phosphate + CO2 + NADPH + H+
+R02736,6,"beta-D-Glucose-6-phosphate:NADP+ 1-oxoreductase; beta-D-Glucose 6-phosphate + NADP+ <=> D-Glucono-1,5-lactone 6-phosphate + NADPH + H+"
+R00217,7,oxaloacetate carboxy-lyase (pyruvate-forming); Oxaloacetate <=> Pyruvate + CO2
+R02032,8,6-Phospho-2-dehydro-D-gluconate:NAD+ 2-oxidoreductase; 6-Phospho-D-gluconate + NAD+ <=> 6-Phospho-2-dehydro-D-gluconate + NADH + H+
+R00305,9,"D-glucose:quinone 1-oxidoreductase; D-Glucose + Quinone <=> D-Glucono-1,5-lactone + Hydroquinone"
+R01522,10,"beta-D-Glucose:oxygen 1-oxidoreductase; beta-D-Glucose + Oxygen <=> D-Glucono-1,5-lactone + Hydrogen peroxide"
+R08571,11,glyceraldehyde ferredoxin oxidoreductase; D-Glyceraldehyde + H2O + Oxidized ferredoxin <=> D-Glycerate + H+ + Reduced ferredoxin
+R02036,12,6-Phospho-D-gluconate hydro-lyase(2-dehydro-3-deoxy-6-phospho-D-gluconate-forming); 6-Phospho-D-gluconate <=> 2-Dehydro-3-deoxy-6-phospho-D-gluconate + H2O
+R01899,13,Isocitrate:NADP+ oxidoreductase; Isocitrate + NADP+ <=> Oxalosuccinate + NADPH + H+
+R00342,14,(S)-malate:NAD+ oxidoreductase; (S)-Malate + NAD+ <=> Oxaloacetate + NADH + H+
+R01900,15,isocitrate hydro-lyase (cis-aconitate-forming); Isocitrate <=> cis-Aconitate + H2O
+
