@@ -4,7 +4,7 @@ from pathlib import Path
 from xml import dom
 import xml.etree.ElementTree as ET
 from loguru import logger
-import drawSvg as draw
+import drawsvg as draw
 
 
 class Hyperlink(draw.DrawingParentElement):
@@ -66,7 +66,7 @@ def parse_html(kegg_html):
     """
     tree_data = []
     found_map_tag = False
-    for line in open(kegg_html, "r"):
+    for line in open(kegg_html, "r", encoding='utf-8'):
         if "<map id=" in line:
             found_map_tag = True
         if found_map_tag is True:
@@ -204,7 +204,7 @@ def convert(
             if quant_value is not None:
                 logger.debug("Reaction path scaling not implemented yet.")
         element = draw.Lines(*coords, **line_attributes)
-        element.appendTitle(f"{g.attrib['title']}")
+        element.append_title(f"{g.attrib['title']}")
         hlink = Hyperlink(f"https://www.genome.jp{g.attrib['href']}", target="_blank")
         hlink.append(element)
         d.append(hlink)
@@ -236,17 +236,17 @@ def convert(
             radius,
             **circle_attributes,
         )
-        element.appendTitle(f"{g.attrib['title']}")
+        element.append_title(f"{g.attrib['title']}")
         hlink = Hyperlink(f"https://www.genome.jp{g.attrib['href']}", target="_blank")
         hlink.append(element)
         d.append(hlink)
 
     ratio = params["max_y"] / params["max_x"]
-    d.setRenderSize(
+    d.set_render_size(
         1200,
         1200 * ratio,
     )
     if output_filename.endswith(".svg") is False:
         output_filename += ".svg"
-    d.saveSvg(output_filename)
+    d.save_svg(output_filename)
     logger.debug(f"Wrote {output_filename}")
